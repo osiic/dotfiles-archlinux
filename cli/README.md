@@ -4,8 +4,14 @@ Koleksi konfigurasi command-line utilities, system monitoring, global Git config
 
 ---
 
-## ⚡ 1-Line Quick Install
+## ⚡ 1-Line Quick Setup
 
+### Option A: Via SSH (Recommended)
+```bash
+git clone git@github.com:osiic/cli.git ~/.cli-config && cd ~/.cli-config && ./setup.sh
+```
+
+### Option B: Via HTTPS
 ```bash
 git clone https://github.com/osiic/cli.git ~/.cli-config && cd ~/.cli-config && ./setup.sh
 ```
@@ -13,7 +19,6 @@ git clone https://github.com/osiic/cli.git ~/.cli-config && cd ~/.cli-config && 
 ---
 
 ## 📦 What's Included & Managed
-
 - **Git Configuration:** `.gitconfig` dengan multi-profile directory support (`~/Projects/osiic/` & `~/Projects/ngetikin/`).
 - **Developer Runtimes:** Auto-installer untuk **NVM (Node.js LTS)** dan **Bun.js**.
 - **System Monitoring:** `btop` system monitor config.

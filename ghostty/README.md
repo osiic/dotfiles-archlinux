@@ -4,8 +4,14 @@ Modern, fast, native GPU-accelerated terminal configuration for **Ghostty** with
 
 ---
 
-## ⚡ 1-Line Quick Install
+## ⚡ 1-Line Quick Setup
 
+### Option A: Via SSH (Recommended)
+```bash
+git clone git@github.com:osiic/ghostty.git ~/.ghostty-config && cd ~/.ghostty-config && ./setup.sh
+```
+
+### Option B: Via HTTPS
 ```bash
 git clone https://github.com/osiic/ghostty.git ~/.ghostty-config && cd ~/.ghostty-config && ./setup.sh
 ```

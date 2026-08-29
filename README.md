@@ -4,29 +4,32 @@ Full Plug & Play Dotfiles, Modular Submodules, dan Full System Provisioning untu
 
 ---
 
-## ⚡ One-Command Bootstrap (Mesin / Laptop Baru)
+## ⚡ 1-Line Quick Setup (Pilih SSH atau HTTPS)
 
-Tinggal jalankan **1 baris perintah ini** di instalasi Arch Linux baru:
-
+### Option A: Via SSH (Recommended)
 ```bash
-git clone --recurse-submodules https://github.com/osiic/dotfiles-archlinux.git ~/dotfiles && cd ~/dotfiles && ./install.sh all
+git clone --recurse-submodules git@github.com:osiic/dotfiles-archlinux.git ~/dotfiles && cd ~/dotfiles && ./setup.sh all
 ```
 
-> **Apa saja yang otomatis di-setup oleh `./install.sh all`?**
+### Option B: Via HTTPS
+```bash
+git clone --recurse-submodules https://github.com/osiic/dotfiles-archlinux.git ~/dotfiles && cd ~/dotfiles && ./setup.sh all
+```
+
+> **Apa saja yang otomatis di-setup oleh `./setup.sh all`?**
 > 1. **Packages:** Install 80+ native Pacman packages, build & install `paru`, install AUR apps (Microsoft Edge, Claude Code, Antigravity, dll), serta Flatpak apps (OBS Studio).
 > 2. **System Tweaks:** Limit pengisian baterai laptop maksimal **60%** (`battery-charge-threshold.service`), enable NetworkManager, Bluetooth, PipeWire Audio, CUPS printer, UFW firewall, dan cronie untuk Timeshift.
 > 3. **Modular Configs:** Otomatis deploy symlink untuk Niri, DankMaterialShell, Ghostty, NeoVim, Starship, Zsh, Fastfetch, Swaylock, dan Wallpapers.
 
 ---
 
-## 📂 Struktur Modular & Submodules
+## 📂 Struktur Modular & Standalone Submodules
 
-Setiap modul bersifat **independen** dan memiliki script `setup.sh` masing-masing:
+Setiap modul berdiri sendiri sebagai repository independen dan memiliki script `./setup.sh`:
 
 ```text
 ~/dotfiles/
-├── install.sh             # Master installer: './install.sh [all|packages|system|configs|<module>]'
-├── sync.sh                # Auto-sync git master & recursive submodules
+├── setup.sh               # Single Unified Script: install, deploy modul, atau auto-sync
 ├── README.md              # Dokumentasi lengkap
 │
 ├── packages/              # Package provisioning (Pacman, Paru/AUR, Flatpak)
@@ -39,64 +42,49 @@ Setiap modul bersifat **independen** dan memiliki script `setup.sh` masing-masin
 │   ├── install-system.sh
 │   └── battery-charge-threshold.service (Limit Baterai 60%)
 │
-├── shell/                 # Shell environment (.zshrc, .bashrc, starship.toml)
-│   └── setup.sh
-│
-├── ghostty/               # Ghostty terminal config
-│   └── setup.sh
-│
-├── nvim/                  # Git Submodule -> git@github.com:osiic/nvim.git
-│   └── setup.sh
-│
-├── vim/                   # Vim config (.vimrc)
-│   └── setup.sh
-│
-├── desktop/               # Niri WM, DankMaterialShell, Swaylock
-│   ├── setup.sh
-│   └── wallpaper/         # Git Submodule -> https://github.com/orangci/walls-catppuccin-mocha.git
-│
-└── cli/                   # CLI Tools (.gitconfig, btop, cava, fastfetch)
-    └── setup.sh
+├── shell/                 # Shell environment (.zshrc, .bashrc, starship.toml) -> osiic/shell
+├── ghostty/               # Ghostty terminal config -> osiic/ghostty
+├── nvim/                  # Full Neovim IDE -> osiic/nvim
+├── vim/                   # Vim Minimal IDE -> osiic/vim
+├── desktop/               # Niri WM, DankMaterialShell, Swaylock, Wallpaper -> osiic/desktop
+└── cli/                   # CLI Tools (.gitconfig, btop, cava, fastfetch, nvm, bun) -> osiic/cli
 ```
 
 ---
 
-## 🧩 Penggunaan Parsial di Distro Lain (Ubuntu / Debian / Server)
+## 🧩 Penggunaan Parsial di Distro Lain (Ubuntu / Gentoo / Server)
 
 Jika kamu berada di komputer kerja, VPS server, atau distro lain dan **hanya butuh modul tertentu**:
 
 ```bash
-# Contoh 1: Hanya butuh Neovim
-git clone git@github.com:osiic/nvim.git ~/.config/nvim
+# Contoh 1: Hanya butuh Shell (Zsh + Starship)
+./setup.sh shell
 
-# Contoh 2: Hanya butuh Shell (Zsh + Starship) dari dotfiles
-git clone https://github.com/osiic/dotfiles-archlinux.git ~/dotfiles
-cd ~/dotfiles
-./install.sh shell
+# Contoh 2: Hanya butuh Neovim IDE
+./setup.sh nvim
 
-# Contoh 3: Hanya deploy semua config (tanpa install software Arch)
-./install.sh configs
+# Contoh 3: Hanya deploy seluruh symlink config (tanpa install package Arch)
+./setup.sh configs
 ```
 
 ---
 
-## 🔄 Cara Update & Sync Config
+## 🔄 Cara Sync & Backup Config
 
-Setiap kali kamu edit konfigurasi (misal edit `~/.config/niri/config.kdl` atau `~/.zshrc`), filenya otomatis berubah di dalam `~/dotfiles` karena menggunakan **Live Symlink**.
-
-Untuk menyimpan dan push ke GitHub:
+Untuk melakukan auto-commit dan push seluruh perubahan konfigurasi ke GitHub:
 ```bash
-cd ~/dotfiles
-./sync.sh "update niri window rules"
+./setup.sh "pesan commit kamu"
+```
+Atau tanpa pesan:
+```bash
+./setup.sh sync
 ```
 
 ---
 
 ## 🛡️ System Restore Point (Timeshift)
 
-Untuk proteksi OS sebelum melakukan update besar atau utak-atik kernel:
-
-- **Buat Restore Point Baru (CLI):**
+- **Buat Restore Point Baru:**
   ```bash
   sudo timeshift --create --comments "Working Stable State" --tags D
   ```
