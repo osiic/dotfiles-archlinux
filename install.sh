@@ -1,53 +1,62 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -e
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
-BACKUP_DIR="$HOME/.dotfiles_backup/$(date +%Y%m%d_%H%M%S)"
+TARGET="${1:-all}"
 
-link_file() {
-    src="$1"
-    dest="$2"
-
-    mkdir -p "$(dirname "$dest")"
-
-    # If destination exists and is not already the right symlink
-    if [ -e "$dest" ] || [ -L "$dest" ]; then
-        current_target="$(readlink -f "$dest" 2>/dev/null || true)"
-        real_src="$(readlink -f "$src" 2>/dev/null || true)"
-
-        if [ "$current_target" != "$real_src" ]; then
-            mkdir -p "$BACKUP_DIR"
-            echo "Backing up $dest -> $BACKUP_DIR/"
-            mv "$dest" "$BACKUP_DIR/"
-            ln -sfn "$src" "$dest"
-            echo "Linked $dest -> $src"
-        else
-            echo "Already linked: $dest"
-        fi
+run_module() {
+    mod="$1"
+    if [ -f "$DOTFILES_DIR/$mod/setup.sh" ]; then
+        echo "--> Running setup for [$mod]..."
+        sh "$DOTFILES_DIR/$mod/setup.sh"
+    elif [ "$mod" = "nvim" ] && [ -d "$DOTFILES_DIR/nvim" ]; then
+        echo "--> Running setup for [nvim]..."
+        mkdir -p "$HOME/.config"
+        ln -sfn "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
     else
-        ln -sfn "$src" "$dest"
-        echo "Linked $dest -> $src"
+        echo "Warning: Module [$mod] not found or has no setup.sh"
     fi
 }
 
-echo "=== Installing Dotfiles Symlinks ==="
-
-# Link home files
-if [ -d "$DOTFILES_DIR/home" ]; then
-    for item in "$DOTFILES_DIR/home"/.[!.]* "$DOTFILES_DIR/home"/*; do
-        [ -e "$item" ] || continue
-        base="$(basename "$item")"
-        link_file "$item" "$HOME/$base"
+install_configs() {
+    echo "=== Linking Modular Dotfiles Configurations ==="
+    for mod in shell ghostty desktop cli vim nvim; do
+        run_module "$mod"
     done
-fi
+    echo "=== All Configuration Symlinks Active! ==="
+}
 
-# Link config directories/files
-if [ -d "$DOTFILES_DIR/config" ]; then
-    for item in "$DOTFILES_DIR/config"/*; do
-        [ -e "$item" ] || continue
-        base="$(basename "$item")"
-        link_file "$item" "$HOME/.config/$base"
-    done
-fi
-
-echo "=== Dotfiles link setup complete! ==="
+case "$TARGET" in
+    packages)
+        echo "=== Installing All System Packages (Pacman, Paru/AUR, Flatpak) ==="
+        "$DOTFILES_DIR/packages/install-packages.sh"
+        ;;
+    system)
+        echo "=== Configuring System Tweaks & Battery Limits ==="
+        "$DOTFILES_DIR/system/install-system.sh"
+        ;;
+    configs)
+        install_configs
+        ;;
+    all)
+        echo "=========================================================="
+        echo "🚀 FULL PLUG & PLAY ARCH LINUX PROVISIONING & DOTFILES 🚀"
+        echo "=========================================================="
+        "$DOTFILES_DIR/packages/install-packages.sh"
+        "$DOTFILES_DIR/system/install-system.sh"
+        install_configs
+        echo "=========================================================="
+        echo "✨ Setup Complete! Please restart your graphical session."
+        echo "=========================================================="
+        ;;
+    *)
+        # Specific single module, e.g., ./install.sh shell
+        if [ -d "$DOTFILES_DIR/$TARGET" ]; then
+            run_module "$TARGET"
+        else
+            echo "Usage: $0 [all | packages | system | configs | <module_name>]"
+            echo "Modules: shell, desktop, ghostty, nvim, vim, cli"
+            exit 1
+        fi
+        ;;
+esac

@@ -1,105 +1,106 @@
-# 🚀 Dotfiles & System Restore Management
+# 🚀 dotfiles-archlinux
 
-Koleksi konfigurasi personal untuk desktop **Niri (Wayland)**, **DMS (DankMaterialShell)**, Shell, Text Editor, dan System Restore Point.
+Full Plug & Play Dotfiles, Modular Submodules, dan Full System Provisioning untuk **Arch Linux (Niri Wayland + DMS)**.
 
 ---
 
-## 📂 Struktur Direktori
+## ⚡ One-Command Bootstrap (Mesin / Laptop Baru)
 
-Repository ini menggunakan pola **Symlink**. File di dalam `~/dotfiles/` terhubung langsung ke `~/` dan `~/.config/`.
-Artinya: **Setiap kali kamu edit config di lokasi aslinya (misal `~/.config/niri/config.kdl`), isi di dalam dotfiles ini otomatis terupdate!**
+Tinggal jalankan **1 baris perintah ini** di instalasi Arch Linux baru:
+
+```bash
+git clone --recurse-submodules https://github.com/osiic/dotfiles-archlinux.git ~/dotfiles && cd ~/dotfiles && ./install.sh all
+```
+
+> **Apa saja yang otomatis di-setup oleh `./install.sh all`?**
+> 1. **Packages:** Install 80+ native Pacman packages, build & install `paru`, install AUR apps (Microsoft Edge, Claude Code, Antigravity, dll), serta Flatpak apps (OBS Studio).
+> 2. **System Tweaks:** Limit pengisian baterai laptop maksimal **60%** (`battery-charge-threshold.service`), enable NetworkManager, Bluetooth, PipeWire Audio, CUPS printer, UFW firewall, dan cronie untuk Timeshift.
+> 3. **Modular Configs:** Otomatis deploy symlink untuk Niri, DankMaterialShell, Ghostty, NeoVim, Starship, Zsh, Fastfetch, Swaylock, dan Wallpapers.
+
+---
+
+## 📂 Struktur Modular & Submodules
+
+Setiap modul bersifat **independen** dan memiliki script `setup.sh` masing-masing:
 
 ```text
 ~/dotfiles/
-├── install.sh             # Script untuk deploy/pasang symlink ke sistem
-├── sync.sh                # Script untuk auto-commit & push/pull perubahan git
-├── README.md              # Panduan lengkap ini
-├── home/                  # File yang diarahkan ke ~/ ($HOME)
-│   ├── .zshrc
-│   ├── .bashrc
-│   ├── .bash_profile
-│   ├── .gitconfig
-│   └── .vimrc
-└── config/                # Folder/file yang diarahkan ke ~/.config/
-    ├── niri/              # Niri WM config & DMS integration
-    ├── DankMaterialShell/ # DMS themes, widgets, & settings
-    ├── ghostty/           # Ghostty terminal config & themes
-    ├── nvim/              # Neovim configuration
-    ├── starship.toml      # Prompt Starship
-    ├── fastfetch/         # Fastfetch system info
-    ├── btop/              # Resource monitor
-    ├── cava/              # Audio visualizer
-    ├── alacritty/         # Alacritty terminal theme
-    └── swaylock/          # Lockscreen config
+├── install.sh             # Master installer: './install.sh [all|packages|system|configs|<module>]'
+├── sync.sh                # Auto-sync git master & recursive submodules
+├── README.md              # Dokumentasi lengkap
+│
+├── packages/              # Package provisioning (Pacman, Paru/AUR, Flatpak)
+│   ├── install-packages.sh
+│   ├── pacman.txt
+│   ├── aur.txt
+│   └── flatpak.txt
+│
+├── system/                # System tweaks & systemd services
+│   ├── install-system.sh
+│   └── battery-charge-threshold.service (Limit Baterai 60%)
+│
+├── shell/                 # Shell environment (.zshrc, .bashrc, starship.toml)
+│   └── setup.sh
+│
+├── ghostty/               # Ghostty terminal config
+│   └── setup.sh
+│
+├── nvim/                  # Git Submodule -> git@github.com:osiic/nvim.git
+│   └── setup.sh
+│
+├── vim/                   # Vim config (.vimrc)
+│   └── setup.sh
+│
+├── desktop/               # Niri WM, DankMaterialShell, Swaylock
+│   ├── setup.sh
+│   └── wallpaper/         # Git Submodule -> https://github.com/orangci/walls-catppuccin-mocha.git
+│
+└── cli/                   # CLI Tools (.gitconfig, btop, cava, fastfetch)
+    └── setup.sh
 ```
 
 ---
 
-## 🛠️ Cara Pasang di Komputer Baru (Fresh Install)
+## 🧩 Penggunaan Parsial di Distro Lain (Ubuntu / Debian / Server)
 
-1. Clone repository dotfiles:
-   ```bash
-   git clone <URL_REPO_GITHUB_KAMU> ~/dotfiles
-   ```
-2. Jalankan installer symlink:
-   ```bash
-   cd ~/dotfiles
-   ./install.sh
-   ```
-   *Installer akan otomatis membuat symlink dan mengamankan file lama jika ada yang bentrok.*
+Jika kamu berada di komputer kerja, VPS server, atau distro lain dan **hanya butuh modul tertentu**:
+
+```bash
+# Contoh 1: Hanya butuh Neovim
+git clone git@github.com:osiic/nvim.git ~/.config/nvim
+
+# Contoh 2: Hanya butuh Shell (Zsh + Starship) dari dotfiles
+git clone https://github.com/osiic/dotfiles-archlinux.git ~/dotfiles
+cd ~/dotfiles
+./install.sh shell
+
+# Contoh 3: Hanya deploy semua config (tanpa install software Arch)
+./install.sh configs
+```
 
 ---
 
-## 🔄 Cara Sync & Backup Config (Git)
+## 🔄 Cara Update & Sync Config
 
-Jika kamu baru saja mengubah konfigurasi desktop / shell / editor dan ingin menyimpannya ke Git:
+Setiap kali kamu edit konfigurasi (misal edit `~/.config/niri/config.kdl` atau `~/.zshrc`), filenya otomatis berubah di dalam `~/dotfiles` karena menggunakan **Live Symlink**.
 
+Untuk menyimpan dan push ke GitHub:
 ```bash
 cd ~/dotfiles
-./sync.sh
+./sync.sh "update niri window rules"
 ```
-Atau berikan pesan commit spesifik:
-```bash
-./sync.sh "update niri keybinds and wallpaper timer"
-```
-
-Jika kamu sudah menambahkan remote GitHub (`git remote add origin <URL>`), script `./sync.sh` juga akan otomatis melakukan **pull** dan **push** ke repository GitHub kamu.
 
 ---
 
 ## 🛡️ System Restore Point (Timeshift)
 
-Untuk restore point seluruh sistem operasi (OS-wide backup) jika terjadi error sistem/driver/kernel:
+Untuk proteksi OS sebelum melakukan update besar atau utak-atik kernel:
 
-### 1. Install Timeshift
-```bash
-sudo pacman -S timeshift rsync
-```
-
-### 2. Buat Restore Point Baru (Snapshot)
-- **Lewat GUI:** Buka aplikasi **Timeshift** dari menu / DMS Spotlight (`Mod + Space`).
-- **Lewat CLI (Terminal):**
+- **Buat Restore Point Baru (CLI):**
   ```bash
-  # Buat snapshot dengan komentar
-  sudo timeshift --create --comments "Clean Working Setup" --tags D
+  sudo timeshift --create --comments "Working Stable State" --tags D
   ```
-
-### 3. Lihat Daftar Restore Point
-```bash
-sudo timeshift --list
-```
-
-### 4. Restore Sistem jika Terjadi Masalah
-- **Lewat CLI:**
+- **Restore OS:**
   ```bash
   sudo timeshift --restore
   ```
-  *(Pilih nomor snapshot yang ingin di-restore lalu ikuti petunjuk di layar).*
-
-### 5. Otomatisasi Snapshot Harian
-Aktifkan cron daemon untuk snapshot terjadwal:
-```bash
-sudo pacman -S cronie
-sudo systemctl enable --now cronie.service
-```
-Buka Timeshift -> Settings -> Schedule -> Aktifkan Daily/Weekly snapshot sesuai kebutuhan.
