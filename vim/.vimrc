@@ -62,7 +62,7 @@ set history=1000
 set autowrite
 
 " ==============================================================================
-" Native File Explorer (Netrw as File Tree / Neo-tree equivalent)
+" Native File Explorer (Netrw as Neo-Tree Clone)
 " ==============================================================================
 let g:netrw_banner = 0             " Sembunyikan banner help netrw
 let g:netrw_liststyle = 3          " Tree view style
@@ -71,6 +71,39 @@ let g:netrw_altv = 1               " Buka split ke kanan
 let g:netrw_winsize = 25           " Lebar panel tree (25%)
 let g:netrw_list_hide = '^\./\$,^\.\./\$'
 let g:netrw_hide = 0               " Tampilkan hidden files
+
+" Smart create file/folder (mirip Neo-tree: ketik nama file langsung, atau tambah '/' untuk folder)
+function! s:NetrwCreate()
+    let l:name = input("Add new file/folder (end with / for directory): ")
+    if empty(l:name)
+        return
+    endif
+    if l:name =~# '/$'
+        " Buat folder
+        execute 'silent !mkdir -p ' . fnameescape(l:name)
+    else
+        " Buat parent directory jika ada, lalu touch file
+        let l:dir = fnamemodify(l:name, ':h')
+        if l:dir !=# '.' && !isdirectory(l:dir)
+            execute 'silent !mkdir -p ' . fnameescape(l:dir)
+        endif
+        execute 'silent !touch ' . fnameescape(l:name)
+    endif
+    redraw!
+    " Refresh view
+    normal! <C-L>
+endfunction
+
+" Map shortcut di dalam Netrw sama persis seperti Neo-tree
+augroup NetrwNeoTreeKeymaps
+    autocmd!
+    autocmd FileType netrw nmap <buffer> a :call <SID>NetrwCreate()<CR>
+    autocmd FileType netrw nmap <buffer> d D
+    autocmd FileType netrw nmap <buffer> r R
+    autocmd FileType netrw nmap <buffer> l <CR>
+    autocmd FileType netrw nmap <buffer> h -
+    autocmd FileType netrw nmap <buffer> q :call ToggleNetrw()<CR>
+augroup END
 
 " Toggle Native File Tree with <leader>e / <C-e>
 function! ToggleNetrw()
