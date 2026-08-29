@@ -10,6 +10,9 @@
 [submodule "ghostty"]
 	path = ghostty
 	url = git@github.com:osiic/ghostty.git
+[submodule "cli"]
+	path = cli
+	url = git@github.com:osiic/cli.git
 [submodule "desktop/wallpaper"]
 	path = desktop/wallpaper
 	url = https://github.com/orangci/walls-catppuccin-mocha.git
