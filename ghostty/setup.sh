@@ -26,7 +26,7 @@ if [ -d "$DIR/.git" ]; then
 fi
 
 # ------------------------------------------------------------------------------
-# 2. Deteksi Package Manager & Auto-Install Ghostty jika belum ada
+# 2. Deteksi Package Manager & Auto-Install Ghostty Official Commands
 # ------------------------------------------------------------------------------
 install_packages() {
     if ! command -v ghostty >/dev/null 2>&1; then
@@ -44,8 +44,15 @@ install_packages() {
         elif command -v nix-env >/dev/null 2>&1; then
             echo "-> Detected: NixOS"
             nix-env -iA nixpkgs.ghostty
-        else
-            echo "Note: Please install ghostty package for your OS if not already available."
+        elif command -v apt-get >/dev/null 2>&1; then
+            echo "-> Detected: Debian / Ubuntu"
+            echo "Checking official ghostty binaries / zig build requirements..."
+            if command -v snap >/dev/null 2>&1; then
+                sudo snap install ghostty --classic 2>/dev/null || true
+            fi
+        elif command -v apk >/dev/null 2>&1; then
+            echo "-> Detected: Alpine Linux"
+            sudo apk add ghostty || true
         fi
     fi
 }

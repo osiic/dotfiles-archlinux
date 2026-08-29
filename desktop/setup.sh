@@ -34,13 +34,24 @@ if [ -f "$DIR/.gitmodules" ] || [ -d "$DIR/wallpaper/.git" ]; then
 fi
 
 # ------------------------------------------------------------------------------
-# 3. Deteksi Package Manager & Auto-Install Desktop Packages jika di Arch Linux
+# 3. Deteksi Package Manager & Auto-Install Niri & Wayland Desktop Packages
 # ------------------------------------------------------------------------------
 install_packages() {
-    if command -v pacman >/dev/null 2>&1; then
-        if ! command -v niri >/dev/null 2>&1 || ! command -v dms >/dev/null 2>&1; then
-            echo "Installing Niri WM, DMS, and desktop utilities on Arch Linux..."
+    if ! command -v niri >/dev/null 2>&1; then
+        echo "Installing Niri WM & desktop utilities..."
+        if command -v pacman >/dev/null 2>&1; then
+            echo "-> Detected: Arch Linux"
             sudo pacman -Syu --needed --noconfirm niri dms-shell-niri swaylock xwayland-satellite polkit-gnome matugen
+        elif command -v dnf >/dev/null 2>&1; then
+            echo "-> Detected: Fedora (Copr)"
+            sudo dnf copr enable -y yalter/niri || true
+            sudo dnf install -y niri swaylock xwayland-satellite
+        elif command -v nix-env >/dev/null 2>&1; then
+            echo "-> Detected: NixOS"
+            nix-env -iA nixpkgs.niri nixpkgs.swaylock
+        elif command -v apt-get >/dev/null 2>&1; then
+            echo "-> Detected: Debian / Ubuntu"
+            echo "Note: Niri on Debian/Ubuntu can be built via cargo or installed via official .deb releases on GitHub."
         fi
     fi
 }
