@@ -7,7 +7,7 @@ BACKUP_DIR="$HOME/.nvim_backup_$(date +%Y%m%d_%H%M%S)"
 echo "=== 🚀 Neovim IDE Setup (Cross-Platform & Auto-Updater) ==="
 
 # ------------------------------------------------------------------------------
-# 1. Update Repo jika terhubung ke Git Remote
+# 1. Auto-Update Repo jika ada pembaruan di GitHub
 # ------------------------------------------------------------------------------
 if [ -d "$DIR/.git" ]; then
     echo "Checking for upstream updates from GitHub..."
@@ -26,11 +26,15 @@ if [ -d "$DIR/.git" ]; then
 fi
 
 # ------------------------------------------------------------------------------
-# 2. Deteksi Package Manager & Auto-Install Neovim + Tools (ripgrep, fd, nodejs, etc)
+# 2. Deteksi Package Manager & Auto-Install Neovim + Tools jika belum ada
 # ------------------------------------------------------------------------------
 install_packages() {
-    echo "Checking core dependencies (neovim, git, ripgrep, fd)..."
-    if ! command -v nvim >/dev/null 2>&1 || ! command -v rg >/dev/null 2>&1 || ! command -v fd >/dev/null 2>&1; then
+    NEEDS_INSTALL=0
+    if ! command -v nvim >/dev/null 2>&1 || ! command -v git >/dev/null 2>&1; then
+        NEEDS_INSTALL=1
+    fi
+
+    if [ "$NEEDS_INSTALL" -eq 1 ]; then
         echo "Installing required packages..."
         if command -v pkg >/dev/null 2>&1; then
             echo "-> Detected: Termux (Android)"
@@ -63,7 +67,7 @@ install_packages() {
             echo "-> Detected: macOS (Homebrew)"
             brew install neovim git ripgrep fd node
         else
-            echo "Warning: No supported package manager found. Please install neovim, git, ripgrep, and fd manually."
+            echo "Warning: No supported package manager found. Please install neovim & git manually."
         fi
     fi
 }
