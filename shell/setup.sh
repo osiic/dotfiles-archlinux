@@ -112,9 +112,9 @@ backup_and_link() {
 }
 
 # ------------------------------------------------------------------------------
-# 4. Pasang Symlink Home Shell & Starship
+# 4. Pasang Symlink Home Shell, Profile & Starship
 # ------------------------------------------------------------------------------
-for f in .zshrc .bashrc .bash_profile; do
+for f in .zshrc .bashrc .bash_profile .zprofile; do
     if [ -f "$DIR/$f" ]; then
         backup_and_link "$DIR/$f" "$HOME/$f"
     fi

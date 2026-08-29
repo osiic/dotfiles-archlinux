@@ -5,7 +5,15 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "=== Configuring System Tweaks & Services ==="
 
-# 1. Battery Charge Threshold (Limit 60%)
+# 1. TTY1 Autologin Setup (Auto login directly without password)
+if [ -f "$DIR/autologin.conf" ]; then
+    echo "Configuring TTY1 Autologin for $(whoami)..."
+    sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+    sudo cp "$DIR/autologin.conf" /etc/systemd/system/getty@tty1.service.d/autologin.conf
+    sudo systemctl daemon-reload
+fi
+
+# 2. Battery Charge Threshold (Limit 60%)
 if [ -f "$DIR/battery-charge-threshold.service" ]; then
     echo "Installing battery-charge-threshold.service..."
     sudo cp "$DIR/battery-charge-threshold.service" /etc/systemd/system/
@@ -13,7 +21,7 @@ if [ -f "$DIR/battery-charge-threshold.service" ]; then
     sudo systemctl enable --now battery-charge-threshold.service || echo "Warning: battery threshold service enable failed (check if hardware supports BAT0 charge threshold)"
 fi
 
-# 2. Enable Standard System Services
+# 3. Enable Standard System Services
 SERVICES=(
     "NetworkManager.service"
     "bluetooth.service"
@@ -29,7 +37,7 @@ for svc in "${SERVICES[@]}"; do
     sudo systemctl enable "$svc" 2>/dev/null || true
 done
 
-# 3. Setup Timeshift automated daily snapshot via cronie if available
+# 4. Setup Timeshift automated daily snapshot via cronie if available
 if command -v crond >/dev/null 2>&1 || systemctl list-unit-files cronie.service >/dev/null 2>&1; then
     echo "Enabling cronie.service for Timeshift automated snapshots..."
     sudo systemctl enable --now cronie.service 2>/dev/null || true
