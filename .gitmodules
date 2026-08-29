@@ -4,6 +4,9 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:osiic/vim.git
+[submodule "shell"]
+	path = shell
+	url = git@github.com:osiic/shell.git
 [submodule "desktop/wallpaper"]
 	path = desktop/wallpaper
 	url = https://github.com/orangci/walls-catppuccin-mocha.git
