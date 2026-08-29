@@ -1,0 +1,20 @@
+{
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "webSearch": {
+    "enabled": true,
+    "searchEngines": [],
+    "disabledEngines": []
+  },
+  "commandRunner": {
+    "enabled": true,
+    "history": [
+      "btop"
+    ]
+  },
+  "quickLauncher": {
+    "enabled": true
+  }
+}

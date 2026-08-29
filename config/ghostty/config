@@ -1,0 +1,42 @@
+# Theme: Catppuccin Mocha
+theme = "Catppuccin Mocha"
+
+# Background & Transparency
+background-opacity = 0.94
+background-blur = true
+
+# Window & Decorations (Minimal, no CSD/bars, managed by Niri)
+window-decoration = false
+window-padding-x = 12
+window-padding-y = 10
+window-padding-balance = true
+
+# Font
+font-family = "JetBrains Mono"
+font-size = 12
+
+# Cursor (Catppuccin Mocha Rosewater/Text feel)
+cursor-style = block
+cursor-color = #f5e0dc
+cursor-text = #1e1e2e
+
+# Scrollback
+scrollback-limit = 20000
+
+# Split Navigation (sekarang Ctrl+Shift+HJKL)
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:down
+keybind = ctrl+shift+k=goto_split:up
+keybind = ctrl+shift+l=goto_split:right
+
+# Split Resize (Ctrl+Shift+Alt+HJKL)
+keybind = ctrl+shift+alt+h=resize_split:left,20
+keybind = ctrl+shift+alt+j=resize_split:down,20
+keybind = ctrl+shift+alt+k=resize_split:up,20
+keybind = ctrl+shift+alt+l=resize_split:right,20
+
+# Tab Navigation (sekarang Ctrl+Alt+HJKL)
+keybind = ctrl+alt+h=previous_tab
+keybind = ctrl+alt+l=next_tab
+keybind = ctrl+alt+j=next_tab
+keybind = ctrl+alt+k=previous_tab

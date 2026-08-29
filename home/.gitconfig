@@ -1,0 +1,16 @@
+[user]
+	name = Osi ic
+	email = osiic.offcl@gmail.com
+
+[core]
+	editor = nvim
+
+[includeIf "gitdir:~/Projects/osiic/"]
+    path = ~/Projects/osiic/.gitconfig
+
+[includeIf "gitdir:~/Projects/ngetikin/"]
+    path = ~/Projects/ngetikin/.gitconfig
+[includeIf "gitdir:/home/developer/Projects/osiic/"]
+	path = /home/developer/Projects/osiic/.gitconfig
+[includeIf "gitdir:/home/developer/Projects/ngetikin/"]
+	path = /home/developer/Projects/ngetikin/.gitconfig
