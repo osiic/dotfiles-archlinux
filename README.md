@@ -82,6 +82,21 @@ Atau tanpa pesan:
 
 ---
 
+## 🐳 Docker On-Demand Policy (8GB RAM Optimization)
+
+- **Engine & Compose Native:** Docker Engine + Docker Compose native (tanpa overhead Docker Desktop).
+- **Socket Activation On-Demand (`docker.socket`):** Docker daemon **tidak berjalan di background saat boot/idle** sehingga RAM tetap lega. Daemon baru otomatis aktif saat perintah `docker` / `docker compose` dipanggil.
+- **Workflow On-Demand:**
+  ```bash
+  # Mulai testing lokal / sandbox:
+  docker compose up -d
+
+  # Setelah selesai bekerja:
+  docker compose down
+  ```
+
+---
+
 ## 🛡️ System Restore Point (Timeshift)
 
 - **Buat Restore Point Baru:**

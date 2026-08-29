@@ -43,4 +43,12 @@ if command -v crond >/dev/null 2>&1 || systemctl list-unit-files cronie.service 
     sudo systemctl enable --now cronie.service 2>/dev/null || true
 fi
 
+# 5. Docker Setup (On-Demand Socket Activation for 8GB RAM)
+if command -v docker >/dev/null 2>&1; then
+    echo "Configuring Docker on-demand socket activation..."
+    sudo usermod -aG docker "$(whoami)" 2>/dev/null || true
+    sudo systemctl disable docker.service 2>/dev/null || true
+    sudo systemctl enable --now docker.socket 2>/dev/null || true
+fi
+
 echo "=== System Services Configuration Complete! ==="

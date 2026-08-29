@@ -9,6 +9,8 @@ cava
 cups
 cups-pk-helper
 dms-shell-niri
+docker
+docker-compose
 efibootmgr
 eza
 fastfetch
