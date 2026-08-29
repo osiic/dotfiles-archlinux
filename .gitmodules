@@ -1,0 +1,6 @@
+[submodule "config/nvim"]
+	path = config/nvim
+	url = git@github.com:osiic/nvim.git
+[submodule "config/wallpaper"]
+	path = config/wallpaper
+	url = https://github.com/orangci/walls-catppuccin-mocha.git
