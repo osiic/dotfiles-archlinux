@@ -1,10 +1,25 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -e
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
 BACKUP_DIR="$HOME/.ghostty_backup_$(date +%Y%m%d_%H%M%S)"
 
 echo "=== 🚀 Ghostty Terminal Setup (Cross-Platform & Auto-Updater) ==="
+
+run_sudo() {
+    if [ "$(id -u)" -eq 0 ]; then
+        "$@"
+    elif command -v sudo >/dev/null 2>&1; then
+        if sudo -n true 2>/dev/null; then
+            sudo "$@"
+        else
+            echo "Note: Sudo requires password or non-root environment. Running sudo..."
+            sudo "$@" || echo "Warning: Package install via sudo skipped or failed."
+        fi
+    else
+        echo "Warning: root/sudo privilege not available. Please ensure ghostty is installed manually."
+    fi
+}
 
 # ------------------------------------------------------------------------------
 # 1. Auto-Update Repo jika ada pembaruan di GitHub
@@ -33,26 +48,25 @@ install_packages() {
         echo "Installing ghostty terminal..."
         if command -v pacman >/dev/null 2>&1; then
             echo "-> Detected: Arch Linux"
-            sudo pacman -Syu --needed --noconfirm ghostty git
+            run_sudo pacman -Syu --needed --noconfirm ghostty git
         elif command -v brew >/dev/null 2>&1; then
             echo "-> Detected: macOS (Homebrew)"
             brew install --cask ghostty
         elif command -v dnf >/dev/null 2>&1; then
             echo "-> Detected: Fedora (Copr)"
-            sudo dnf copr enable -y pgdev/ghostty || true
-            sudo dnf install -y ghostty git
+            run_sudo dnf copr enable -y pgdev/ghostty || true
+            run_sudo dnf install -y ghostty git
         elif command -v nix-env >/dev/null 2>&1; then
             echo "-> Detected: NixOS"
             nix-env -iA nixpkgs.ghostty
         elif command -v apt-get >/dev/null 2>&1; then
             echo "-> Detected: Debian / Ubuntu"
-            echo "Checking official ghostty binaries / zig build requirements..."
             if command -v snap >/dev/null 2>&1; then
-                sudo snap install ghostty --classic 2>/dev/null || true
+                run_sudo snap install ghostty --classic 2>/dev/null || true
             fi
         elif command -v apk >/dev/null 2>&1; then
             echo "-> Detected: Alpine Linux"
-            sudo apk add ghostty || true
+            run_sudo apk add ghostty || true
         fi
     fi
 }

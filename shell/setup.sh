@@ -1,10 +1,25 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -e
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
 BACKUP_DIR="$HOME/.shell_backup_$(date +%Y%m%d_%H%M%S)"
 
 echo "=== 🚀 Shell Environment Setup (Cross-Platform & Auto-Updater) ==="
+
+run_sudo() {
+    if [ "$(id -u)" -eq 0 ]; then
+        "$@"
+    elif command -v sudo >/dev/null 2>&1; then
+        if sudo -n true 2>/dev/null; then
+            sudo "$@"
+        else
+            echo "Note: Sudo requires password or non-root environment. Running sudo..."
+            sudo "$@" || echo "Warning: Package install via sudo skipped or failed."
+        fi
+    else
+        echo "Warning: root/sudo privilege not available. Please ensure packages are installed manually."
+    fi
+}
 
 # ------------------------------------------------------------------------------
 # 1. Auto-Update Repo jika ada pembaruan di GitHub
@@ -41,28 +56,29 @@ install_packages() {
             pkg update -y && pkg install -y zsh starship git eza bat fzf
         elif command -v apt-get >/dev/null 2>&1; then
             echo "-> Detected: Debian / Ubuntu / Mint / PopOS"
-            sudo apt-get update -y && sudo apt-get install -y zsh git curl bat eza fzf || sudo apt-get install -y zsh git curl
+            DEBIAN_FRONTEND=noninteractive run_sudo apt-get update -y
+            DEBIAN_FRONTEND=noninteractive run_sudo apt-get install -y --no-install-recommends zsh git curl bat eza fzf || DEBIAN_FRONTEND=noninteractive run_sudo apt-get install -y zsh git curl
             if ! command -v starship >/dev/null 2>&1; then
                 curl -sS https://starship.rs/install.sh | sh -s -- -y
             fi
         elif command -v pacman >/dev/null 2>&1; then
             echo "-> Detected: Arch Linux / Manjaro / EndeavourOS"
-            sudo pacman -Syu --needed --noconfirm zsh starship git eza bat fzf zsh-autosuggestions zsh-syntax-highlighting
+            run_sudo pacman -Syu --needed --noconfirm zsh starship git eza bat fzf zsh-autosuggestions zsh-syntax-highlighting
         elif command -v emerge >/dev/null 2>&1; then
             echo "-> Detected: Gentoo"
-            sudo emerge --ask=n app-shells/zsh app-shells/starship dev-vcs/git
+            run_sudo emerge --ask=n app-shells/zsh app-shells/starship dev-vcs/git
         elif command -v dnf >/dev/null 2>&1; then
             echo "-> Detected: Fedora / RHEL / CentOS"
-            sudo dnf install -y zsh starship git eza bat fzf
+            run_sudo dnf install -y zsh starship git eza bat fzf
         elif command -v zypper >/dev/null 2>&1; then
             echo "-> Detected: openSUSE"
-            sudo zypper install -y zsh starship git
+            run_sudo zypper --non-interactive install -y zsh starship git
         elif command -v apk >/dev/null 2>&1; then
             echo "-> Detected: Alpine Linux"
-            sudo apk add zsh starship git
+            run_sudo apk add zsh starship git
         elif command -v xbps-install >/dev/null 2>&1; then
             echo "-> Detected: Void Linux"
-            sudo xbps-install -Sy zsh starship git
+            run_sudo xbps-install -Sy zsh starship git
         elif command -v nix-env >/dev/null 2>&1; then
             echo "-> Detected: NixOS"
             nix-env -iA nixpkgs.zsh nixpkgs.starship nixpkgs.git

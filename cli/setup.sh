@@ -1,10 +1,25 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -e
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
 BACKUP_DIR="$HOME/.cli_backup_$(date +%Y%m%d_%H%M%S)"
 
 echo "=== 🚀 CLI Tools & Dev Runtimes Setup (Cross-Platform & Auto-Updater) ==="
+
+run_sudo() {
+    if [ "$(id -u)" -eq 0 ]; then
+        "$@"
+    elif command -v sudo >/dev/null 2>&1; then
+        if sudo -n true 2>/dev/null; then
+            sudo "$@"
+        else
+            echo "Note: Sudo requires password or non-root environment. Running sudo..."
+            sudo "$@" || echo "Warning: Package install via sudo skipped or failed."
+        fi
+    else
+        echo "Warning: root/sudo privilege not available. Please ensure packages are installed manually."
+    fi
+}
 
 # ------------------------------------------------------------------------------
 # 1. Auto-Update Repo jika ada pembaruan di GitHub
@@ -41,16 +56,17 @@ install_cli_tools() {
             pkg update -y && pkg install -y git btop fastfetch eza bat fzf jq curl wget
         elif command -v apt-get >/dev/null 2>&1; then
             echo "-> Detected: Debian / Ubuntu / Mint / PopOS"
-            sudo apt-get update -y && sudo apt-get install -y git btop bat fzf jq curl wget eza fastfetch || sudo apt-get install -y git btop fzf jq curl wget
+            DEBIAN_FRONTEND=noninteractive run_sudo apt-get update -y
+            DEBIAN_FRONTEND=noninteractive run_sudo apt-get install -y --no-install-recommends git btop bat fzf jq curl wget eza fastfetch || DEBIAN_FRONTEND=noninteractive run_sudo apt-get install -y git btop fzf jq curl wget
         elif command -v pacman >/dev/null 2>&1; then
             echo "-> Detected: Arch Linux / Manjaro / EndeavourOS"
-            sudo pacman -Syu --needed --noconfirm git btop fastfetch eza bat fzf jq cava curl wget
+            run_sudo pacman -Syu --needed --noconfirm git btop fastfetch eza bat fzf jq cava curl wget
         elif command -v emerge >/dev/null 2>&1; then
             echo "-> Detected: Gentoo"
-            sudo emerge --ask=n sys-process/btop app-misc/fastfetch app-shells/fzf app-misc/jq
+            run_sudo emerge --ask=n sys-process/btop app-misc/fastfetch app-shells/fzf app-misc/jq
         elif command -v dnf >/dev/null 2>&1; then
             echo "-> Detected: Fedora / RHEL / CentOS"
-            sudo dnf install -y git btop fastfetch eza bat fzf jq curl wget
+            run_sudo dnf install -y git btop fastfetch eza bat fzf jq curl wget
         elif command -v brew >/dev/null 2>&1; then
             echo "-> Detected: macOS (Homebrew)"
             brew install git btop fastfetch eza bat fzf jq cava
