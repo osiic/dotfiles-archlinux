@@ -2,13 +2,13 @@
 
 output "HDMI-A-1" {
     mode "1360x768@60.015"
-    scale 0.8984375
-    position x=0 y=34
+    scale 0.8
+    position x=0 y=174
 }
 
 output "eDP-1" {
     mode "1920x1080@60.056"
     scale 1
-    position x=1511 y=0
+    position x=1700 y=0
 }
 
