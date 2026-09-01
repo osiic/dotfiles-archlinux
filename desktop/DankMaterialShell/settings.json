@@ -87,7 +87,9 @@
   "showCpuTemp": true,
   "showGpuTemp": true,
   "selectedGpuIndex": 0,
-  "enabledGpuPciIds": [],
+  "enabledGpuPciIds": [
+    "0000:00:02.0"
+  ],
   "showSystemTray": true,
   "systemTrayIconTintMode": "none",
   "systemTrayIconTintSaturation": 50,
