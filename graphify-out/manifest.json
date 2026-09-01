@@ -1,0 +1,236 @@
+{
+  "cli/setup.sh": {
+    "mtime": 1788030497.3560917,
+    "seen": 1788242511.3088093,
+    "ast_hash": "fe01e5cd3215dc3e289cbcc65943a1b5",
+    "semantic_hash": "fe01e5cd3215dc3e289cbcc65943a1b5"
+  },
+  "desktop/DankMaterialShell/plugin_settings.json": {
+    "mtime": 1787898600.7277966,
+    "seen": 1788242511.308814,
+    "ast_hash": "d3a8dd719609a772ada5ff05976d75fe",
+    "semantic_hash": "d3a8dd719609a772ada5ff05976d75fe"
+  },
+  "desktop/DankMaterialShell/plugins/calculator/calculator.js": {
+    "mtime": 1788030451.088224,
+    "seen": 1788242511.3088164,
+    "ast_hash": "1e9b498b1e2e51d1075bd56572c26d7b",
+    "semantic_hash": "1e9b498b1e2e51d1075bd56572c26d7b"
+  },
+  "desktop/DankMaterialShell/plugins/calculator/plugin.json": {
+    "mtime": 1788030451.088224,
+    "seen": 1788242511.3088176,
+    "ast_hash": "31e378592bf52307a4c993372f3ccc1d",
+    "semantic_hash": "31e378592bf52307a4c993372f3ccc1d"
+  },
+  "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js": {
+    "mtime": 1788030451.088224,
+    "seen": 1788242511.3088186,
+    "ast_hash": "f52529d8c1a56092c48f3cb8c3d668c7",
+    "semantic_hash": "f52529d8c1a56092c48f3cb8c3d668c7"
+  },
+  "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js": {
+    "mtime": 1788030451.089242,
+    "seen": 1788242511.3088202,
+    "ast_hash": "f8c18b30edb5ded1dacc26f6e4dbfd0b",
+    "semantic_hash": "f8c18b30edb5ded1dacc26f6e4dbfd0b"
+  },
+  "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js": {
+    "mtime": 1788030451.089242,
+    "seen": 1788242511.3088214,
+    "ast_hash": "e0398b0e922eaa1bad7c8c56850cc1c7",
+    "semantic_hash": "e0398b0e922eaa1bad7c8c56850cc1c7"
+  },
+  "desktop/DankMaterialShell/plugins/commandRunner/plugin.json": {
+    "mtime": 1788030451.089342,
+    "seen": 1788242511.3088226,
+    "ast_hash": "0a757c85fb3f8efcd619ac2061b5f021",
+    "semantic_hash": "0a757c85fb3f8efcd619ac2061b5f021"
+  },
+  "desktop/DankMaterialShell/plugins/quickLauncher/plugin.json": {
+    "mtime": 1787893949.680787,
+    "seen": 1788242511.3088236,
+    "ast_hash": "e3201b944e30a710b02e2a30257cb754",
+    "semantic_hash": "e3201b944e30a710b02e2a30257cb754"
+  },
+  "desktop/DankMaterialShell/plugins/webSearch/DDGBangWorker.js": {
+    "mtime": 1788030451.0899324,
+    "seen": 1788242511.3088248,
+    "ast_hash": "21d58784d5ba4caff94e06303d823c33",
+    "semantic_hash": "21d58784d5ba4caff94e06303d823c33"
+  },
+  "desktop/DankMaterialShell/plugins/webSearch/DDGSyncHelper.js": {
+    "mtime": 1788030451.0899324,
+    "seen": 1788242511.308826,
+    "ast_hash": "3313c46954a2388e2f93f3025c645401",
+    "semantic_hash": "3313c46954a2388e2f93f3025c645401"
+  },
+  "desktop/DankMaterialShell/plugins/webSearch/plugin.json": {
+    "mtime": 1788030451.0899324,
+    "seen": 1788242511.3088272,
+    "ast_hash": "fa5a353c1d212a13a27f881b67dad85d",
+    "semantic_hash": "fa5a353c1d212a13a27f881b67dad85d"
+  },
+  "desktop/DankMaterialShell/settings.json": {
+    "mtime": 1788191390.9141452,
+    "seen": 1788242511.308828,
+    "ast_hash": "b0ac88c244cfc27ee3843a4857dd8122",
+    "semantic_hash": "b0ac88c244cfc27ee3843a4857dd8122"
+  },
+  "desktop/DankMaterialShell/themes/catppuccin/theme.json": {
+    "mtime": 1787564776.004428,
+    "seen": 1788242511.308829,
+    "ast_hash": "31728ae923a22b8af21c1231ec3a1a7e",
+    "semantic_hash": "31728ae923a22b8af21c1231ec3a1a7e"
+  },
+  "desktop/setup.sh": {
+    "mtime": 1788030504.4430716,
+    "seen": 1788242511.3088303,
+    "ast_hash": "f60bac64f0ee807c313e84823ba112b5",
+    "semantic_hash": "f60bac64f0ee807c313e84823ba112b5"
+  },
+  "ghostty/setup.sh": {
+    "mtime": 1788030500.5530827,
+    "seen": 1788242511.3088315,
+    "ast_hash": "cea1328baaeed162d121a005dc8ff179",
+    "semantic_hash": "cea1328baaeed162d121a005dc8ff179"
+  },
+  "nvim/.luarc.json": {
+    "mtime": 1788026601.5450768,
+    "seen": 1788242511.3088324,
+    "ast_hash": "f0531bd5e225842dd4ba273d5ee47222",
+    "semantic_hash": "f0531bd5e225842dd4ba273d5ee47222"
+  },
+  "nvim/init.lua": {
+    "mtime": 1788026601.5450768,
+    "seen": 1788242511.3088336,
+    "ast_hash": "ea595848ea26bb39b4afcd5b0e374be6",
+    "semantic_hash": "ea595848ea26bb39b4afcd5b0e374be6"
+  },
+  "nvim/lazy-lock.json": {
+    "mtime": 1788030814.3282146,
+    "seen": 1788242511.3088346,
+    "ast_hash": "556509ea9b63b3ba35259d2405e4d2cf",
+    "semantic_hash": "556509ea9b63b3ba35259d2405e4d2cf"
+  },
+  "nvim/lua/core/keymaps.lua": {
+    "mtime": 1788026601.5469656,
+    "seen": 1788242511.3088355,
+    "ast_hash": "8c5a04b810a1c3df5a097e917cbc1607",
+    "semantic_hash": "8c5a04b810a1c3df5a097e917cbc1607"
+  },
+  "nvim/lua/core/options.lua": {
+    "mtime": 1788026601.5470693,
+    "seen": 1788242511.3088367,
+    "ast_hash": "93268aeeb55102bcee15752c31f52884",
+    "semantic_hash": "93268aeeb55102bcee15752c31f52884"
+  },
+  "nvim/lua/core/plugins.lua": {
+    "mtime": 1788026601.5470693,
+    "seen": 1788242511.308838,
+    "ast_hash": "3f8a560a36a562f6fe457d235d72d5da",
+    "semantic_hash": "3f8a560a36a562f6fe457d235d72d5da"
+  },
+  "nvim/lua/plugins/catppuccin.lua": {
+    "mtime": 1788026601.5470693,
+    "seen": 1788242511.3088388,
+    "ast_hash": "30912c0739ac999e72884bc323aebea8",
+    "semantic_hash": "30912c0739ac999e72884bc323aebea8"
+  },
+  "nvim/lua/plugins/coding.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088403,
+    "ast_hash": "656a73ab8a04aa2062fd8861af2ad5fe",
+    "semantic_hash": "656a73ab8a04aa2062fd8861af2ad5fe"
+  },
+  "nvim/lua/plugins/completion.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088412,
+    "ast_hash": "c8e3a94725b30784a981f1d7774cc70b",
+    "semantic_hash": "c8e3a94725b30784a981f1d7774cc70b"
+  },
+  "nvim/lua/plugins/dashboard-nvim.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088422,
+    "ast_hash": "1cfbe2f2749f50b098609f18ac787109",
+    "semantic_hash": "1cfbe2f2749f50b098609f18ac787109"
+  },
+  "nvim/lua/plugins/git.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088436,
+    "ast_hash": "2b93c6d7da0ac3fa7defcfcf80d3d44b",
+    "semantic_hash": "2b93c6d7da0ac3fa7defcfcf80d3d44b"
+  },
+  "nvim/lua/plugins/lsp.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088443,
+    "ast_hash": "7337d78ef82e30d16004b23c5c21e46a",
+    "semantic_hash": "7337d78ef82e30d16004b23c5c21e46a"
+  },
+  "nvim/lua/plugins/lualine.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088453,
+    "ast_hash": "3dce169ca7c3e1e3b6b97bd36053be00",
+    "semantic_hash": "3dce169ca7c3e1e3b6b97bd36053be00"
+  },
+  "nvim/lua/plugins/neo-tree.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088465,
+    "ast_hash": "af9f83a77a10490a3df021a2cb9f4c30",
+    "semantic_hash": "af9f83a77a10490a3df021a2cb9f4c30"
+  },
+  "nvim/lua/plugins/null-ls.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088474,
+    "ast_hash": "e3accc91d350ae1028bc608ca805eb35",
+    "semantic_hash": "e3accc91d350ae1028bc608ca805eb35"
+  },
+  "nvim/lua/plugins/telescope.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088484,
+    "ast_hash": "c25094c81f2e0ac0affd1f977d03c33d",
+    "semantic_hash": "c25094c81f2e0ac0affd1f977d03c33d"
+  },
+  "nvim/lua/plugins/treesitter.lua": {
+    "mtime": 1788026601.5473902,
+    "seen": 1788242511.3088493,
+    "ast_hash": "d1cd92c0cb2aa47df443cd5603c3d279",
+    "semantic_hash": "d1cd92c0cb2aa47df443cd5603c3d279"
+  },
+  "nvim/setup.sh": {
+    "mtime": 1788030489.3891144,
+    "seen": 1788242511.3088505,
+    "ast_hash": "e8fa5a4e61fe5c171cfa0c77cf7bb76b",
+    "semantic_hash": "e8fa5a4e61fe5c171cfa0c77cf7bb76b"
+  },
+  "packages/install-packages.sh": {
+    "mtime": 1788027805.5083451,
+    "seen": 1788242511.3088515,
+    "ast_hash": "8dc8254e9f11ffcac05285753342d722",
+    "semantic_hash": "8dc8254e9f11ffcac05285753342d722"
+  },
+  "setup.sh": {
+    "mtime": 1788029815.0792603,
+    "seen": 1788242511.3088524,
+    "ast_hash": "7b1679c22ab5e836e01e63219362d4ea",
+    "semantic_hash": "7b1679c22ab5e836e01e63219362d4ea"
+  },
+  "shell/setup.sh": {
+    "mtime": 1788165304.1180909,
+    "seen": 1788242511.3088539,
+    "ast_hash": "2605b6ad1a9e96c3793d4fbf061b8c27",
+    "semantic_hash": "2605b6ad1a9e96c3793d4fbf061b8c27"
+  },
+  "system/install-system.sh": {
+    "mtime": 1788031818.288006,
+    "seen": 1788242511.3088572,
+    "ast_hash": "e542969ca1e3fbe7e5e3fd8de8516e72",
+    "semantic_hash": "e542969ca1e3fbe7e5e3fd8de8516e72"
+  },
+  "vim/setup.sh": {
+    "mtime": 1788030485.0941267,
+    "seen": 1788242511.3088582,
+    "ast_hash": "54b9ca4569e454d27141de14aac810dc",
+    "semantic_hash": "54b9ca4569e454d27141de14aac810dc"
+  }
+}

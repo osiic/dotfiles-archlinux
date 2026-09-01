@@ -1,0 +1,2241 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_containsmathfunctions",
+      "label": "containsMathFunctions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "containsmathfunctions()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L28"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "label": "evaluate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "evaluate()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L243"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateinteger",
+      "label": "evaluateInteger()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "evaluateinteger()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L129"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateprecise",
+      "label": "evaluatePrecise()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "evaluateprecise()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L189"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluatewithexponentiation",
+      "label": "evaluateWithExponentiation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "evaluatewithexponentiation()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L169"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_findmatchingparen",
+      "label": "_findMatchingParen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "_findmatchingparen()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L36"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_getmathnamesregex",
+      "label": "_getMathNamesRegex()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "_getmathnamesregex()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_isintegeronly",
+      "label": "isIntegerOnly()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "isintegeronly()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L122"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_ismathexpression",
+      "label": "isMathExpression()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "ismathexpression()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L341"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_normalizegroupednumberseparators",
+      "label": "normalizeGroupedNumberSeparators()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "normalizegroupednumberseparators()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L32"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_preprocessexpression",
+      "label": "preprocessExpression()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "preprocessexpression()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L68"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_replacedegreefunc",
+      "label": "_replaceDegreeFunc()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "_replacedegreefunc()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L47"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator_validatemathexpression",
+      "label": "validateMathExpression()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "validatemathexpression()",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L108"
+    },
+    {
+      "id": "nvim_lua_plugins_git_map",
+      "label": "map()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "file_type": "code",
+      "norm_label": "map()",
+      "source_file": "nvim/lua/plugins/git.lua",
+      "source_location": "L17"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_websearch_ddgsynchelper_syncbangs",
+      "label": "syncBangs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "file_type": "code",
+      "norm_label": "syncbangs()",
+      "source_file": "desktop/DankMaterialShell/plugins/webSearch/DDGSyncHelper.js",
+      "source_location": "L2"
+    },
+    {
+      "id": "nvim_luarc",
+      "label": ".luarc.json",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": ".luarc.json",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_luarc_diagnostics_globals",
+      "label": "globals",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "globals",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "nvim_luarc_hint_enable",
+      "label": "hint.enable",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "hint.enable",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "nvim_luarc_lua",
+      "label": "Lua",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "lua",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "nvim_luarc_lua_diagnostics",
+      "label": "diagnostics",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "diagnostics",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "nvim_luarc_lua_runtime",
+      "label": "runtime",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "runtime",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "nvim_luarc_lua_workspace",
+      "label": "workspace",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "workspace",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "nvim_luarc_runtime_path",
+      "label": "path",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "path",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "nvim_luarc_runtime_version",
+      "label": "runtime.version",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "runtime.version",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "nvim_luarc_schema",
+      "label": "$schema",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "$schema",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "nvim_luarc_workspace_library",
+      "label": "workspace.library",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "workspace.library",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "ref_init_lua",
+      "label": "?/init.lua",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "?/init.lua",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "ref_linter",
+      "label": "linter",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "linter",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "ref_lua",
+      "label": "?.lua",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "?.lua",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "ref_path_to_library_directory",
+      "label": "path/to/library/directory",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "path/to/library/directory",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "ref_path_to_nvim_runtime_lua",
+      "label": "/path/to/nvim/runtime/lua",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "/path/to/nvim/runtime/lua",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "ref_path_to_nvim_runtime_lua_vim_lsp",
+      "label": "/path/to/nvim/runtime/lua/vim/lsp",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "/path/to/nvim/runtime/lua/vim/lsp",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "ref_vim",
+      "label": "vim",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "concept",
+      "norm_label": "vim",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "label": "calculator.js",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "calculator.js",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_git",
+      "label": "git.lua",
+      "_origin": "ast",
+      "community": 10,
+      "file_type": "code",
+      "norm_label": "git.lua",
+      "source_file": "nvim/lua/plugins/git.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "packages_install_packages",
+      "label": "install-packages.sh",
+      "_origin": "ast",
+      "community": 11,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "install-packages.sh",
+      "source_file": "packages/install-packages.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "packages_install_packages_sh__entry",
+      "label": "install-packages.sh script",
+      "_origin": "ast",
+      "community": 11,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "install-packages.sh script",
+      "source_file": "packages/install-packages.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "setup",
+      "label": "setup.sh",
+      "_origin": "ast",
+      "community": 12,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "setup.sh",
+      "source_file": "setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 12,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "system_install_system",
+      "label": "install-system.sh",
+      "_origin": "ast",
+      "community": 13,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "install-system.sh",
+      "source_file": "system/install-system.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "system_install_system_sh__entry",
+      "label": "install-system.sh script",
+      "_origin": "ast",
+      "community": 13,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "install-system.sh script",
+      "source_file": "system/install-system.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_websearch_ddgbangworker",
+      "label": "DDGBangWorker.js",
+      "_origin": "ast",
+      "community": 14,
+      "file_type": "code",
+      "norm_label": "ddgbangworker.js",
+      "source_file": "desktop/DankMaterialShell/plugins/webSearch/DDGBangWorker.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_init",
+      "label": "init.lua",
+      "_origin": "ast",
+      "community": 15,
+      "file_type": "code",
+      "norm_label": "init.lua",
+      "source_file": "nvim/init.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_core_keymaps",
+      "label": "keymaps.lua",
+      "_origin": "ast",
+      "community": 16,
+      "file_type": "code",
+      "norm_label": "keymaps.lua",
+      "source_file": "nvim/lua/core/keymaps.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_core_options",
+      "label": "options.lua",
+      "_origin": "ast",
+      "community": 17,
+      "file_type": "code",
+      "norm_label": "options.lua",
+      "source_file": "nvim/lua/core/options.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_core_plugins",
+      "label": "plugins.lua",
+      "_origin": "ast",
+      "community": 18,
+      "file_type": "code",
+      "norm_label": "plugins.lua",
+      "source_file": "nvim/lua/core/plugins.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_catppuccin",
+      "label": "catppuccin.lua",
+      "_origin": "ast",
+      "community": 19,
+      "file_type": "code",
+      "norm_label": "catppuccin.lua",
+      "source_file": "nvim/lua/plugins/catppuccin.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "fs",
+      "label": "fs",
+      "_origin": "ast",
+      "community": 2,
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "fs",
+      "source_file": "fs"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "label": "load-calculator.js",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "load-calculator.js",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_calculator",
+      "label": "Calculator",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "calculator",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_code",
+      "label": "code",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "code",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L4"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_fs",
+      "label": "fs",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "fs",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_path",
+      "label": "path",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "path",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L2"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions",
+      "label": "test_functions.js",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "test_functions.js",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions_calculator",
+      "label": "Calculator",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "calculator",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions_rejecttests",
+      "label": "rejectTests",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "rejecttests",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L115"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions_tests",
+      "label": "tests",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "tests",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision",
+      "label": "test_precision.js",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "test_precision.js",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision_calculator",
+      "label": "Calculator",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "calculator",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision_tests",
+      "label": "tests",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "tests",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "nvim_lua_plugins_coding",
+      "label": "coding.lua",
+      "_origin": "ast",
+      "community": 20,
+      "file_type": "code",
+      "norm_label": "coding.lua",
+      "source_file": "nvim/lua/plugins/coding.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_completion",
+      "label": "completion.lua",
+      "_origin": "ast",
+      "community": 21,
+      "file_type": "code",
+      "norm_label": "completion.lua",
+      "source_file": "nvim/lua/plugins/completion.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_dashboard_nvim",
+      "label": "dashboard-nvim.lua",
+      "_origin": "ast",
+      "community": 22,
+      "file_type": "code",
+      "norm_label": "dashboard-nvim.lua",
+      "source_file": "nvim/lua/plugins/dashboard-nvim.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_lsp",
+      "label": "lsp.lua",
+      "_origin": "ast",
+      "community": 23,
+      "file_type": "code",
+      "norm_label": "lsp.lua",
+      "source_file": "nvim/lua/plugins/lsp.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_lualine",
+      "label": "lualine.lua",
+      "_origin": "ast",
+      "community": 24,
+      "file_type": "code",
+      "norm_label": "lualine.lua",
+      "source_file": "nvim/lua/plugins/lualine.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_neo_tree",
+      "label": "neo-tree.lua",
+      "_origin": "ast",
+      "community": 25,
+      "file_type": "code",
+      "norm_label": "neo-tree.lua",
+      "source_file": "nvim/lua/plugins/neo-tree.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_null_ls",
+      "label": "null-ls.lua",
+      "_origin": "ast",
+      "community": 26,
+      "file_type": "code",
+      "norm_label": "null-ls.lua",
+      "source_file": "nvim/lua/plugins/null-ls.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_telescope",
+      "label": "telescope.lua",
+      "_origin": "ast",
+      "community": 27,
+      "file_type": "code",
+      "norm_label": "telescope.lua",
+      "source_file": "nvim/lua/plugins/telescope.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_lua_plugins_treesitter",
+      "label": "treesitter.lua",
+      "_origin": "ast",
+      "community": 28,
+      "file_type": "code",
+      "norm_label": "treesitter.lua",
+      "source_file": "nvim/lua/plugins/treesitter.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "cli_setup",
+      "label": "cli/setup.sh",
+      "_origin": "ast",
+      "community": 3,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "cli/setup.sh",
+      "source_file": "cli/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "cli_setup_backup_and_link",
+      "label": "backup_and_link()",
+      "_origin": "ast",
+      "community": 3,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "backup_and_link()",
+      "source_file": "cli/setup.sh",
+      "source_location": "L101"
+    },
+    {
+      "id": "cli_setup_install_cli_tools",
+      "label": "install_cli_tools()",
+      "_origin": "ast",
+      "community": 3,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_cli_tools()",
+      "source_file": "cli/setup.sh",
+      "source_location": "L46"
+    },
+    {
+      "id": "cli_setup_run_sudo",
+      "label": "run_sudo()",
+      "_origin": "ast",
+      "community": 3,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_sudo()",
+      "source_file": "cli/setup.sh",
+      "source_location": "L9"
+    },
+    {
+      "id": "cli_setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 3,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "cli/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_setup",
+      "label": "desktop/setup.sh",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "desktop/setup.sh",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_setup_backup_and_link",
+      "label": "backup_and_link()",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "backup_and_link()",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L79"
+    },
+    {
+      "id": "desktop_setup_install_packages",
+      "label": "install_packages()",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_packages()",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L54"
+    },
+    {
+      "id": "desktop_setup_run_sudo",
+      "label": "run_sudo()",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_sudo()",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L9"
+    },
+    {
+      "id": "desktop_setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "shell_setup",
+      "label": "shell/setup.sh",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "shell/setup.sh",
+      "source_file": "shell/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "shell_setup_backup_and_link",
+      "label": "backup_and_link()",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "backup_and_link()",
+      "source_file": "shell/setup.sh",
+      "source_location": "L99"
+    },
+    {
+      "id": "shell_setup_install_packages",
+      "label": "install_packages()",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_packages()",
+      "source_file": "shell/setup.sh",
+      "source_location": "L46"
+    },
+    {
+      "id": "shell_setup_run_sudo",
+      "label": "run_sudo()",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_sudo()",
+      "source_file": "shell/setup.sh",
+      "source_location": "L9"
+    },
+    {
+      "id": "shell_setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "shell/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "ghostty_setup",
+      "label": "ghostty/setup.sh",
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "ghostty/setup.sh",
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "ghostty_setup_install_packages",
+      "label": "install_packages()",
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_packages()",
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L46"
+    },
+    {
+      "id": "ghostty_setup_run_sudo",
+      "label": "run_sudo()",
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_sudo()",
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L9"
+    },
+    {
+      "id": "ghostty_setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_setup",
+      "label": "nvim/setup.sh",
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "nvim/setup.sh",
+      "source_file": "nvim/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_setup_install_packages",
+      "label": "install_packages()",
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_packages()",
+      "source_file": "nvim/setup.sh",
+      "source_location": "L46"
+    },
+    {
+      "id": "nvim_setup_run_sudo",
+      "label": "run_sudo()",
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_sudo()",
+      "source_file": "nvim/setup.sh",
+      "source_location": "L9"
+    },
+    {
+      "id": "nvim_setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "nvim/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "vim_setup",
+      "label": "vim/setup.sh",
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "vim/setup.sh",
+      "source_file": "vim/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "vim_setup_install_packages",
+      "label": "install_packages()",
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_packages()",
+      "source_file": "vim/setup.sh",
+      "source_location": "L46"
+    },
+    {
+      "id": "vim_setup_run_sudo",
+      "label": "run_sudo()",
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_sudo()",
+      "source_file": "vim/setup.sh",
+      "source_location": "L9"
+    },
+    {
+      "id": "vim_setup_sh__entry",
+      "label": "setup.sh script",
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "setup.sh script",
+      "source_file": "vim/setup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "desktop_dankmaterialshell_plugins_websearch_ddgsynchelper",
+      "label": "DDGSyncHelper.js",
+      "_origin": "ast",
+      "community": 9,
+      "file_type": "code",
+      "norm_label": "ddgsynchelper.js",
+      "source_file": "desktop/DankMaterialShell/plugins/webSearch/DDGSyncHelper.js",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "cli_setup_install_cli_tools",
+      "target": "cli_setup_run_sudo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "cli/setup.sh",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_setup_sh__entry",
+      "target": "cli_setup_backup_and_link",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "cli/setup.sh",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_setup_sh__entry",
+      "target": "cli_setup_install_cli_tools",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "cli/setup.sh",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_containsmathfunctions",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_getmathnamesregex",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_normalizegroupednumberseparators",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_containsmathfunctions",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_validatemathexpression",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L265",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_preprocessexpression",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L272",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_isintegeronly",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L298",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateinteger",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L299",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateprecise",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L303",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateinteger",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluatewithexponentiation",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_ismathexpression",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_containsmathfunctions",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L348",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_ismathexpression",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_validatemathexpression",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L349",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_preprocessexpression",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_replacedegreefunc",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator_replacedegreefunc",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_findmatchingparen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup_install_packages",
+      "target": "desktop_setup_run_sudo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup_sh__entry",
+      "target": "desktop_setup_install_packages",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup_sh__entry",
+      "target": "desktop_setup_backup_and_link",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "desktop/setup.sh",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "ghostty_setup_install_packages",
+      "target": "ghostty_setup_run_sudo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "ghostty_setup_sh__entry",
+      "target": "ghostty_setup_install_packages",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_setup_install_packages",
+      "target": "nvim_setup_run_sudo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "nvim/setup.sh",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_setup_sh__entry",
+      "target": "nvim_setup_install_packages",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "nvim/setup.sh",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup_install_packages",
+      "target": "shell_setup_run_sudo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shell/setup.sh",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup_sh__entry",
+      "target": "shell_setup_backup_and_link",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shell/setup.sh",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup_sh__entry",
+      "target": "shell_setup_install_packages",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shell/setup.sh",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "vim_setup_install_packages",
+      "target": "vim_setup_run_sudo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "vim/setup.sh",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "vim_setup_sh__entry",
+      "target": "vim_setup_install_packages",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "vim/setup.sh",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_diagnostics_globals",
+      "target": "ref_linter",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_diagnostics_globals",
+      "target": "ref_vim",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_runtime_path",
+      "target": "ref_init_lua",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_runtime_path",
+      "target": "ref_lua",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_workspace_library",
+      "target": "ref_path_to_nvim_runtime_lua",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_workspace_library",
+      "target": "ref_path_to_nvim_runtime_lua_vim_lsp",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_workspace_library",
+      "target": "ref_path_to_library_directory",
+      "relation": "extends",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_setup",
+      "target": "cli_setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cli/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_validatemathexpression",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_isintegeronly",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateinteger",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluatewithexponentiation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluateprecise",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L189",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_getmathnamesregex",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_evaluate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_containsmathfunctions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_normalizegroupednumberseparators",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_ismathexpression",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L341",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_findmatchingparen",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_replacedegreefunc",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_calculator_preprocessexpression",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/calculator.js",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_fs",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_path",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_code",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_load_calculator_calculator",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/load-calculator.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions_rejecttests",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions_calculator",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions_tests",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision_calculator",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision",
+      "target": "desktop_dankmaterialshell_plugins_calculator_tests_test_precision_tests",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_precision.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_websearch_ddgsynchelper",
+      "target": "desktop_dankmaterialshell_plugins_websearch_ddgsynchelper_syncbangs",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/webSearch/DDGSyncHelper.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup",
+      "target": "desktop_setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ghostty_setup",
+      "target": "ghostty_setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_lua_plugins_git",
+      "target": "nvim_lua_plugins_git_map",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/lua/plugins/git.lua",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc",
+      "target": "nvim_luarc_schema",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc",
+      "target": "nvim_luarc_workspace_library",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc",
+      "target": "nvim_luarc_runtime_version",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc",
+      "target": "nvim_luarc_hint_enable",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc",
+      "target": "nvim_luarc_lua",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua",
+      "target": "nvim_luarc_lua_diagnostics",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua",
+      "target": "nvim_luarc_lua_workspace",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua",
+      "target": "nvim_luarc_lua_runtime",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua_diagnostics",
+      "target": "nvim_luarc_diagnostics_globals",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua_runtime",
+      "target": "nvim_luarc_runtime_version",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua_runtime",
+      "target": "nvim_luarc_runtime_path",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_luarc_lua_workspace",
+      "target": "nvim_luarc_workspace_library",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.luarc.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_setup",
+      "target": "nvim_setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_install_packages",
+      "target": "packages_install_packages_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/install-packages.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "setup",
+      "target": "setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup",
+      "target": "shell_setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shell/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "system_install_system",
+      "target": "system_install_system_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "system/install-system.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "vim_setup",
+      "target": "vim_setup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vim/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_setup",
+      "target": "cli_setup_backup_and_link",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cli/setup.sh",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_setup",
+      "target": "cli_setup_install_cli_tools",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cli/setup.sh",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_setup",
+      "target": "cli_setup_run_sudo",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cli/setup.sh",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup",
+      "target": "desktop_setup_install_packages",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/setup.sh",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup",
+      "target": "desktop_setup_backup_and_link",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/setup.sh",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_setup",
+      "target": "desktop_setup_run_sudo",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/setup.sh",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "ghostty_setup",
+      "target": "ghostty_setup_install_packages",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "ghostty_setup",
+      "target": "ghostty_setup_run_sudo",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ghostty/setup.sh",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_setup",
+      "target": "nvim_setup_install_packages",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/setup.sh",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "nvim_setup",
+      "target": "nvim_setup_run_sudo",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/setup.sh",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup",
+      "target": "shell_setup_install_packages",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shell/setup.sh",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup",
+      "target": "shell_setup_run_sudo",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shell/setup.sh",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "shell_setup",
+      "target": "shell_setup_backup_and_link",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shell/setup.sh",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "vim_setup",
+      "target": "vim_setup_install_packages",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vim/setup.sh",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "vim_setup",
+      "target": "vim_setup_run_sudo",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vim/setup.sh",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "desktop_dankmaterialshell_plugins_calculator_tests_test_functions",
+      "target": "fs",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "desktop/DankMaterialShell/plugins/calculator/tests/test_functions.js"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "235aa9a17dbdd6e2c705225a23f46073f8eeb73b"
+}

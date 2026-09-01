@@ -576,28 +576,33 @@
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        "launcherButton",
-        "systemTray",
-        "runningApps",
-        "music",
-        "focusedWindow"
+        {
+          "id": "launcherButton",
+          "enabled": true
+        },
+        "focusedWindow",
+        "music"
       ],
       "centerWidgets": [
-        "workspaceSwitcher"
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        }
       ],
       "rightWidgets": [
+        {
+          "id": "systemTray",
+          "enabled": true,
+          "trayUseInlineExpansion": false
+        },
         "clipboard",
-        "notepadButton",
         "notificationButton",
-        "systemUpdate",
         "weather",
-        "cpuTemp",
-        "gpuTemp",
         "cpuUsage",
         "memUsage",
         "battery",
-        "controlCenterButton",
-        "clock"
+        "clock",
+        "controlCenterButton"
       ],
       "spacing": 4,
       "innerPadding": 4,
