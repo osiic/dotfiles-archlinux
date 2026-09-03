@@ -2,4 +2,3 @@ antigravity-cli
 claude-code
 microsoft-edge-stable-bin
 paru
-wlogout

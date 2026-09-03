@@ -33,7 +33,6 @@ libpulse
 libreoffice-fresh
 linux
 linux-firmware
-mako
 mesa-utils
 mkinitcpio
 mpv
@@ -52,6 +51,7 @@ pipewire-pulse
 polkit-gnome
 power-profiles-daemon
 qt6-multimedia-ffmpeg
+quickshell
 rsync
 scrcpy
 slurp
@@ -76,7 +76,6 @@ unzip
 vim
 vulkan-intel
 vulkan-tools
-waybar
 wget
 wireless-regdb
 wireplumber
