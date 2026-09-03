@@ -81,7 +81,6 @@ wget
 wireless-regdb
 wireplumber
 wl-clipboard
-wlogout
 wpa_supplicant
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
