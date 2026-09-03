@@ -18,7 +18,7 @@ case "$TARGET" in
         ;;
     configs)
         echo "=== Linking Modular Dotfiles Configurations ==="
-        for mod in shell ghostty cli vim nvim; do
+        for mod in shell ghostty cli vim nvim desktop; do
             if [ -f "$DOTFILES_DIR/$mod/setup.sh" ]; then
                 echo "--> Running setup for [$mod]..."
                 sh "$DOTFILES_DIR/$mod/setup.sh"
@@ -33,7 +33,7 @@ case "$TARGET" in
         echo "=========================================================="
         "$DOTFILES_DIR/packages/install-packages.sh"
         "$DOTFILES_DIR/system/install-system.sh"
-        for mod in shell ghostty cli vim nvim; do
+        for mod in shell ghostty cli vim nvim desktop; do
             if [ -f "$DOTFILES_DIR/$mod/setup.sh" ]; then
                 echo "--> Running setup for [$mod]..."
                 sh "$DOTFILES_DIR/$mod/setup.sh"
